@@ -1,4 +1,4 @@
-# 云服务器安装Routeros学习记录
+# 云服务器安装Routeros，并设置wireguard学习记录
 1、打开安装RouterOS脚本网站：
 https://mikrotik.ltd/
 
