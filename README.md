@@ -24,6 +24,7 @@ VERSION=7.21.2 bash <(curl https://mikrotik.ltd/chr.sh)
 7、然后去选择- WireGuard - Peer - New - 添加上需要的参数。
 （PrivateKey 这个可以再创建一个wg2拿到公钥复制过来）
 <img width="954" height="579" alt="image" src="https://github.com/user-attachments/assets/f593c2ce-f940-486c-9f2c-9c87c1c6cb52" />
+
 按照图片这个格式配置好，选择 Apply 就会生成 配置参数 和 二维码 复制参数或者扫描二维码就能使用。
 <img width="962" height="581" alt="image" src="https://github.com/user-attachments/assets/5ca26a65-ae77-400b-8bb0-9b32825698ec" />
 
