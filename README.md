@@ -21,6 +21,8 @@ VERSION=7.21.2 bash <(curl https://mikrotik.ltd/chr.sh)
 选择 IP - Firewall — NAT - Chain(选择srcnat)、Out.Interface(选择ether1)出口网卡
 <img width="905" height="584" alt="image" src="https://github.com/user-attachments/assets/f79514b5-767f-4565-8de0-c639dd19396e" />
 <img width="909" height="581" alt="image" src="https://github.com/user-attachments/assets/420ad7fa-c2a9-4f32-bd49-b5eb7af42bea" />
+<img width="1061" height="647" alt="image" src="https://github.com/user-attachments/assets/6a98da4c-69cc-4503-a4ff-eebb7a0b3cf5" />
+
 
 7、然后去选择- WireGuard - Peer - New - 添加上需要的参数。
 （PrivateKey 这个可以再创建一个wg2拿到公钥复制过来）
