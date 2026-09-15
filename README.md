@@ -13,6 +13,7 @@ VERSION=7.21.3 bash <(curl https://mikrotik.ltd/chr.sh)
 /ip service disable telnet
 /ip service disable ftp
 /ip service disable www
+/ip service disable www-ssl
 /ip service disable api
 /ip service disable api-ssl
 /ip service disable ssh
