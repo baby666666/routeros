@@ -9,6 +9,14 @@ VERSION=7.21.3 bash <(curl https://mikrotik.ltd/chr.sh)
 ```
 3、大概一分钟后，通过winbox连接上在服务器上安装好的RouterOS CHR系统，关闭除winbox的所有协议。
 选择- IP - Services
+```bash
+/ip service disable telnet
+/ip service disable ftp
+/ip service disable www
+/ip service disable api
+/ip service disable api-ssl
+/ip service disable ssh
+```
 <img width="962" height="579" alt="image" src="https://github.com/user-attachments/assets/b9fa4539-7780-4352-8e2e-3d5119c230ed" />
 
 4、设置wireguard VPN。
