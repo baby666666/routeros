@@ -1,4 +1,5 @@
 # 云服务器安装Routeros，并设置wireguard学习记录
+
 1、打开安装RouterOS脚本网站：
 https://mikrotik.ltd/
 
@@ -41,6 +42,11 @@ VERSION=7.21.3 bash <(curl https://mikrotik.ltd/chr.sh)
 按照图片这个格式配置好，选择 Apply 就会生成 配置参数 和 二维码 复制参数或者扫描二维码就能使用。
 <img width="962" height="581" alt="image" src="https://github.com/user-attachments/assets/5ca26a65-ae77-400b-8bb0-9b32825698ec" />
 
-
+8、注意：加 TCP MSS Clamp（有些网站打不开，其实是 TCP 包太大，被隧道分片丢了）
+```bash
+/ip firewall mangle
+add chain=forward protocol=tcp tcp-flags=syn out-interface=wg1 action=change-mss new-mss=clamp-to-pmtu comment="Clamp MSS out WG"
+add chain=forward protocol=tcp tcp-flags=syn in-interface=wg1 action=change-mss new-mss=clamp-to-pmtu comment="Clamp MSS in WG"
+```
 
 
